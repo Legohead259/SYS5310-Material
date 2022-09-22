@@ -28,13 +28,17 @@
 
 \addbibresource{sample.bib} % BibLaTeX bibliography file
 
+\usepackage{longtable}
+
+\usepackage{multirow}
+
 %----------------------------------------------------------------------------------------
 %	REPORT INFORMATION
 %----------------------------------------------------------------------------------------
 
 \reporttitle{Project Sky Net} % The report title to appear on the title page and page headers, do not create manual new lines here as this will carry over to page headers
 
-\reportsubtitle{A Next Generation EO/IR sensor for enabling high-altitude autonomous UAV surveillance} % Report subtitle, include new lines if needed
+\reportsubtitle{} % Report subtitle, include new lines if needed
 
 \reportauthors{	Braidan Duffy (bduffy2018@my.fit.edu), \\
 				Subinita Dey (sdey2021@my.fit.edu), \\
@@ -44,7 +48,18 @@
 
 % \rightheadercontent{\includegraphics[width=3cm]{creodocs_logo.pdf}} % The content in the right header, you may want to add your own company logo or use your company/department name or leave this command empty for no right header content
 
-\rightfootercontent{CUI - Controlled Unclassified Information}
+\setlength{\headheight}{3cm}
+\fancyhead[C]{
+    \begin{tabular}{ | p{8.5cm} | p{3cm} | p{3cm} | p{2.5cm} | }
+        \hline
+        Directorate of Advanced Development, PRN X-DHS20-013 & \multicolumn{3}{|c|}{Project Sky Net} \\
+        \hline
+         & \textbf{Revision:} & \textbf{Revision Date:} & \textbf{Page:} \\
+        \hline
+        Team: Futuristic Innovative Technologies (FIT) & 3 & \today & \thepage~of \pageref{LastPage} \\
+        \hline
+    \end{tabular}
+}
 
 %----------------------------------------------------------------------------------------
 
@@ -102,7 +117,9 @@
 %	CONTENT
 %----------------------------------------------------------------------------------------
 
-\include{01 - Design Dossier/chapters/1-project_purpose}
+\include{chapters/1-project_purpose}
+\include{chapters/2-stakeholders}
+\include{chapters/3-stakeholders_reqs_needs.tex}
 
 %----------------------------------------------------------------------------------------
 %	 REFERENCES/BIBLIOGRAPHY
@@ -125,6 +142,60 @@
 \section*{Appendices}
 
 \begin{appendices}
+
+\section{Project Terminology}
+    \label{app:project_terms}
+    \begin{longtable}{| p{6cm} | p{11cm} |}
+        \hline
+        \textbf{Project Terminology} & \textbf{Definition} \\
+        \hline
+        AIAA Standards & Engineering and technical requirements and the inclusion of provisions necessary to verify compliance \\
+        \hline
+        Airworthiness & Measure of an aircraft's suitability for safe flight \\
+        \hline
+        Atmosphere Turbulence & Small-scale, irregular air motions characterized by winds that vary in speed and direction \\
+        \hline
+        Automatic & A system that will do exactly as programmed; it has no choice \\
+        \hline
+        Autonomous & A system that can make a choice free from outside influence \\
+        \hline
+        Commercial Off The Shelf & Software and hardware that already exist and is available from commercial sources \\
+        \hline
+        dB & Decibel; measurement unit of sound \\
+        \hline
+        Electromagnetic Interference & Interference caused by one electrical or electric device to another by electromagnetic fields set up by its operation \\
+        \hline
+        Electromagnetic Radiation & Electric and magnetic disturbance traveling through space at the speed of light \\
+        \hline
+        Inertial Measurement Unit & A self-contained system that measures linear and angular motion using a triad of accelerometers and gyroscopes \\
+        \hline
+        MATLAB & An interactive programming environment for scientific computing \\
+        \hline
+        Mean Time Between Failure & Prediction of the time between failures of machinery pieces during normal operation parameters \\
+        \hline
+        Mean Time Between Repair & The average time it takes to repair a system; includes any repairs and testing time \\
+        \hline
+        Net Asset Value & Value of an entity’s assets minus the value of its liabilities, often in relation to open-end fund \\
+        \hline
+        Operational Availability & Measurement of the average availability over a period of time includes all experienced sources of downtime \\
+        \hline
+        Risk Priority Number & Measurement used when assessing risk to help, identify critical failure modes associated with design or process \\
+        \hline
+        Spatial Resolution & Measurement of the smallest object that can resolved by the sensor, or on the ground area image for the instantaneous field of view or the sensor \\
+        \hline
+        Subject Matter Expert & Individual or company has a deep understanding of a particular topic and can help improve products, solve problem, or meet technical challenges \\
+        \hline
+        Unmanned Aerial System & System whose components include the necessary equipment, networks, and personnel to control an unmanned aircraft \\
+        \hline
+        Unmanned Aerial Vehicle & Vehicle that does not carry a human operator and is capable of flight under remote control or autonomous programming \\
+        \hline
+        $(W/sr)$ & Watt per Steradian, SI unit of radiant intensity \\
+        \hline
+        $(W/m2)$ & Watt per Square Meter, SI unit of irradiate intensity\\
+        \hline
+    \caption{Project Terminologies}
+    \label{tab:project_terms}
+    \end{longtable}
 
 \end{appendices}
 

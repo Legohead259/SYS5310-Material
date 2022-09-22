@@ -134,12 +134,12 @@
 
 \fancyhf{} % Clear default headers/footers
 
-\fancyhead[L]{\reporttitle} % Left header
+% \fancyhead[L]{\reporttitle} % Left header
 \fancyhead[C]{} % Center header
 \fancyhead[R]{\rightheadercontent} % Right header
 
 \fancyfoot[L]{} % Left footer
-\fancyfoot[C]{\thepage~of \pageref{LastPage}} % Center footer
+% \fancyfoot[C]{\thepage~of \pageref{LastPage}} % Center footer
 \fancyfoot[R]{} % Right footer
 
 \usepackage{calc} % Allows arithmetic in LaTeX commands
