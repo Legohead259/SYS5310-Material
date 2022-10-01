@@ -1,4 +1,655 @@
 \begin{fullwidth}
 \section{Stakeholders Needs and Requirements}
+\subsection{Stakeholder Needs}
+Five needs were identified through interactions with the key stakeholders, the client and the customer.
+\begin{itemize}
+    \item{The most advanced atmospheric turbulence compensating imaging system with integrated digital filtering technology and stereoscopic imaging system, which can produce the quickest real-time, highest spatial resolution images currently available.}
+    \item{AUAV should be equipped with reinforcement-learning AI capable of threat-aversion, "search and find" maneuvers, Object of Interest tracking, Mission Planning, and Adaptive Mission Control.}
+    \item{This AUAV system's Mobile Command Center (MoCC) should have the flexibility to be permanently installed in off-the-grid, difficult-to-access locations.}
+    \item{The AUAV needs to be usable anywhere on the earth.}
+    \item{The AUAV should look like a search and rescue AUAV.}
+    \item{The AUAV System should incorporate a polarimetric imaging system and a hyper-spectral imaging system for advanced background and material identification.}
+\end{itemize}
+ 
+\subsection{Stakeholder Requirements}
+    \subsubsection*{Autonomous Unmanned Aerial Vehicle Platform}
+    \begin{enumerate}
+        \item[S.R.01]{The AUAV system shall interface with the existing AUAV mission control center to provide the best possible imaging technology and data processing for detection, identification, and tracking capabilities.}
+        \item[S.R.02]{The AUAV must be able to operate continuously across the world.}
+        \item[S.R.03]{The AUAV shall conduct its operations in a safe manner.}
+        \item[S.R.04]{The AUAV shall meet or exceed mission detection, identification, and tracking requirements as specified in Table 3 Permutation of Stakeholder Requirements.}
+        \item[S.R.05]{The AUAV shall be a modular, open-architecture platform for inclusion of future technologies.}
+        \item[S.R.06]{The AUAV shall utilize COTS products wherever possible.}
+        \item[S.R.07]{The AUAV shall be supported and maintained for the program life cycle of 25-years after delivery with planned improvements}
+        \item[S.R.08]{The AUAV should be capable of autonomous flight with Artificial Intelligence (AI) - based decision-making for station-keeping, threat-aversion, "search and find" maneuvers, Object of Interest (OoI) tracking, Mission Planning, and Adaptive Mission Control.}
+        \item[S.R.9]{The AUAV shall have an operational availability of at least 98\%.}
+        \item[S.R.10]{The AUAV shall have an instantaneous reliability of at least 70\%.}
+        \item[S.R.11]{AUAV components and subsystems shall have a Mean Time Between Failure (MTBF) of at least one (1) year.}
+        \item[S.R.12]{The AUAV shall have a Mean Time To Failure (MTTF) of 25 years.}
+        \item[S.R.13]{The AUAV shall have a Mean Time To Repair (MTTR) of less than eight (8) hours for most subsystems and components.}
+        \item[S.R.14]{The AUAV shall be capable of sending critical information to the MCC in less than five (5) seconds between message send and acknowledgement received.}
+    \end{enumerate}
+    \subsubsection*{Mobile Command Center}
+    \begin{enumerate}
+        \item[S.R.15]{The MCC shall be powered by a grid-independent 70 to 80-kWh generator that utilizes renewable energy to the greatest extent possible.}
+        \item[S.R.16]{The MCC generator shall be cost effective for long-term maintenance}
+    \end{enumerate}
+
+\subsection{Feasibility Analysis and Risk Identification}
+    The following tables provide the supporting documentation to the requirement feasibility assessment for technical, cost and schedule, organizational, and political and operational. The conclusion is that all requirements have been proven feasible with current technology.
+    
+    \begin{landscape}
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT XX ===
+    % ==================================
+    
+    % \paragraph{S.R. XX} - The requirement
+    
+    % {\fontsize{10pt}{11pt}\selectfont
+    % \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+    %     \hline \endlastfoot
+        
+    %     \hline
+    %     \rowcolor[gray]{0.8}
+    %     \multicolumn{6}{|c|}{ } \\
+    %     \hline
+    %     \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+    %     \hline
+    %     \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+    %     \hline
+    %     \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+    %     \hline
+    %     \rowcolor[gray]{0.8}
+    %     \multicolumn{6}{|c|}{ } \\
+    %     \hline
+    %     \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+    %     \hline
+    %     Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+    %     \hline
+    %     Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+    %     \hline
+    %     Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+    %     \hline
+    %     Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+    %     \label{tab:srXX_feasibility}
+    % \end{longtable}
+    % }
+    
+    % \newpage
+
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 01 ===
+    % ==================================
+    
+    \paragraph{S.R. 01} - The AUAV system shall interface with the existing AUAV MCC to provide the best possible imaging technology and processing for detection, identification, and tracking capabilities.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|l|}{The system will need to detect, identify, and track human activity both day and night.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|p{0.8\linewidth}|}{This will be done by using at least 10 spatial resolution cells across the observed object of interest under all imaging conditions.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & The imaging system will not be able to identify and detect humans as a function of stand-off distance and entrance pupil diameter. & Failure of project objective & \cellcolor{red} High & AUAV operator tasked with orienting the electro-optical imaging systems on the AUAV to view specific locations based on the AUAV's position \newline Use of slipstream sensors & \cellcolor{yellow} Medium \\
+        \hline
+        Cost and Schedule \newline Assessment & Could require new integration technology, as the imaging system is not yet fully defined & Project cost and schedule deploys while being resolved & \cellcolor{yellow} Medium & Good engineering practices for image processing and detection, identification, and tracking feasibility & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & Lack of subject matter experts & Project cost and schedule delays & \cellcolor{green} Low & In-house team available. \newline Can outsource through consultation or send job requests, as needed. \newline Proper documentation of progress and knowledge capture presentation events will be held & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & AUAV becomes difficult to maintain. \newline AUAV may require intervention to fly mission & No cost savings, project fails objectives & \cellcolor{Yellow} Medium & Reliability analysis required. \newline Components and software to be modeled to verify compatibility. \newline AI software package allows for programmable missions and more autonomy & \cellcolor{green} Low
+        \label{tab:sr01_feasibility}
+    \end{longtable}
+    }
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 02 ===
+    % ==================================
+    
+    \paragraph{S.R. 02} - The AUAV must be able to operate continuously across the world.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{The system will need to be deployed in various regions around the world, according to customer needs} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{The AUAV will provide detection 24 hours per day / 7 days per week. Sustained operations should be up to a month of operations at any hot-spot.  Ensure that MCC and AUAV can be deployed to worldwide locations.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & AUAV cannot be deployed to remote environment; no usuable airfields within range; no place to deploy MCC & AUAV unable to be deployed; failure of main objectives & \cellcolor{yellow} Medium & Ensure customers have airfields near by that can service the AUAV before award purchasing contracts \newline Work with customers to establish required infrastructure & \cellcolor{yellow} Medium \\
+        \hline
+        Cost and Schedule \newline Assessment & Transportation of AUAV and associated support equipment & Increased project cost & \cellcolor{green} Low & Ensure there are enough support materials to be quickly deployed \newline Ensure that customer has logistical infrastructure for long term deployments & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & Team required for quick deployment for operations and maintenance & Increased personnel costs & \cellcolor{green} Low & Hire personnel specifically for rapid technical and operational support deployment \newline Train customer agents on appropriate technical and operational procedures & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & No components available \newline Systems fail during the deployment time frame & AUAV fleet grounded & \cellcolor{yellow} Medium & Use of multiple system redundancies to ensure endurance requirements are met & \cellcolor{green} Low
+        \label{tab:sr02_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 03 ===
+    % ==================================
+    
+    \paragraph{S.R. 03} - The AUAV shall conduct its operations in a safe manner
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|p{0.8\linewidth}|}{This is to ensure that the existing fleet, other flying objects, and unintended civilians/targets around it are safe and no incidents occur.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|p{0.8\linewidth}|}{Simulations will ensure that the AUAV will operate safely. Satisfy FAA flight safety regulations.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Design an unsafe aircraft. \newline Communication with other aircraft & Engineering failure, loss of reputation. \newline Loss of equipment. \newline Injury and/or loss of life & \cellcolor{yellow} Medium & The use of good engineering practices, adherence to codes and standards, and multiple built-in redundancies \newline Require approval by FAA prior to flight & \cellcolor{Yellow} Medium \\
+        \hline
+        Cost and Schedule \newline Assessment & Meeting Federal Aviation Regulations (FARs) for unmanned aircraft & Potential lawsuit. \newline No cost savings & \cellcolor{yellow} Medium & The use of system engineering practices and planning to prevent issues ahead of time \newline Continual consultation with FAA & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & Mission of agencies and partners conflict on TOI designations & Schedule delays & \cellcolor{green} Low & Clear definitions of scope and mission by all stakeholders and FIT. \newline Development of comprehensive operational protocols to de-conflict and prevent accidents & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & AUAV must follow all FAA standards and guidelines \newline Possible grounding for unsafe operations \newline AUAV collides with object. \newline AUAV crashes in flight \newline AUAV fails to report near-misses with objects. & Political inquiry and loss of AUAV operational license \newline Potential lawsuit \newline Injury or loss of life & \cellcolor{red} High &  Install manual override settings to operate AUAV from MCC \newline Extensive simulations of operation and AI system to identify failure mechanisms \newline Multiple redundant systems \newline Datalogging service to playback data from failure mode to re-create on the ground & \cellcolor{yellow} Medium
+        \label{tab:sr03_feasibility}
+    \end{longtable}
+    }
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 04 ===
+    % ==================================
+    
+    \paragraph{S.R. 04} - The AUAV shall meet or exceed mission detection, identification, and tracking requirements as specified in Table 3 Permutation of Stakeholder Requirements.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{A state-of-the-art atmospheric turbulence compensating imaging capability with integrated digital filtering technology, that provides real-time, high spatial resolution images, with General Purpose Parallel Processing (GPPP) technology for rapid filter/transform/inverse-transform applications.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|p{0.8\linewidth}|}{Ensure spatial resolution requirements are met for all imaging scenarios} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & There must be enough on-board storage for the GPPP device. \newline The computer processing time must be very fast & Unable to continue storing and processing data resulting in targeting failure & \cellcolor{green} Low & Detect human Target of Interest (TOI) within a slant range of 9.543 km during daytime. \newline Detect human TOI within a slant range of 1.5 km during nighttime. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & Highly reliable and precise Inertial Navigation Systems (INS) are costly & No cost savings & \cellcolor{green} Low & Consider utilizing lower-accuracy INSs supplemented by GPS and air data reference units & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & Lack of SMEs on optical and navigational units & Project delays while SMEs are located and recruited & \cellcolor{green} Low & In-house team available \newline Will outsource through consultation or send out job requests as needed. \newline Proper documentation of progress and knowledge capture presentation events will be held. & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & AUAV becomes difficult to maintain \newline AUAV requires intervention to fly mission & No cost savings, project fails main objectives. \newline Political inquiry \newline International incidents & \cellcolor{Yellow} Medium & Simulate AUAV operation before implementation \newline FAA certification of airworthiness \newline Follow good engineering practices & \cellcolor{green} Low
+        \label{tab:sr04_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 05 ===
+    % ==================================
+    
+    \paragraph{S.R. 05} - The AUAV shall be a modular, open-architecture platform for inclusion of future technologies.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{The AUAV will have increased operational capacities from future features/capabilities/sensor packages.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{The fleet should be able to be upgraded for new needs and as technology improves.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Technology potentially not available to provide all needed functionalities & Inability to meet current requirements & \cellcolor{green} Low & Use COTS products to reduce costs and avoid unnecessary product development & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & The updates required would increase overall project cost and development time & Project goes over-budget and behind schedule & \cellcolor{green} Low & Use COTS products to reduce cost and development time & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & Need dedicated support team for future upgrades and long term service & Will have increase long term personnel costs and may take away man-hours from other tasks & \cellcolor{green} Low & Hire more employees \newline Manage project timeline and personnel appropriately & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & Stakeholder finds this capability unnecessary or does not use it & Political inquiry \newline Wasted development costs and time & \cellcolor{red} High & Make sure there is a valid reason to make certain systems open-architecture \newline Clear definitions of scope and mission by all stakeholders and FIT & \cellcolor{yellow} Medium
+        \label{tab:sr05_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 06 ===
+    % ==================================
+    
+    \paragraph{S.R. 06} - The AUAV shall utilize COTS products wherever possible.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{The use of standardized and readily available components will ensure readily available spare parts are available as well as vendor support of the product.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{Annual and at end of the project audits will take place to ensure that these components are used where necessary and possible.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Many factors in choosing different COTS products, some of which may be subtle & Selection of inferior or incompatible product; wasted development time and money & \cellcolor{green} Low & Trade-off studies should be performed between components prior to selection and procurement & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & Parts may be more expensive, or contractors/vendors could raise costs unexpectedly & Cost increase; development delays & \cellcolor{yellow} Medium & Ensure that all contractors and vendors agree to maintenance and availability early. \newline Award procurement contracts or bulk purchases that lock in certain prices & \cellcolor{green} Low \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor{green} Low & N/A & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & None identified & N/A & \cellcolor{green} Low & N/A & \cellcolor{green} Low
+        \label{tab:sr06_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 07 ===
+    % ==================================
+    
+    \paragraph{S.R. 07} - The AUAV shall be supported and maintained for the program life cycle of 25-years after delivery with planned improvements.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{This is to ensure that when the AUAVs require maintenance, they are able to be fixed, repaired, maintained, etc.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{This will be done by having AUAV Maintenance Technicians on hand.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Could be determining criteria in selecting between two equal components. & Choice of inferior product. & \cellcolor{green} Low & Trade-off studies need to be performed between components prior to procurement to ensure that standard tools are part of the criteria. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}  \\
+        \hline
+        Political and Operational Assessment & No tools available at time of need & AUAV grounded due to lack of maintenance tools & \cellcolor{yellow} Medium & The maintenance manuals will be reviewed for all specialty tools and vendor will be requested to supply as part of contract. & \cellcolor{green} Low 
+        \label{tab:sr07_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 08 ===
+    % ==================================
+    
+    \paragraph{S.R. 08} - The AUAV should be capable of autonomous flight with Artificial Intelligence (AI) - based decision-making for station-keeping, threat-aversion, "search and find" maneuvers, Object of Interest (OoI) tracking, Mission Planning, and Adaptive Mission Control.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        \hline
+        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        \hline
+        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        \hline
+        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        \label{tab:sr08_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 09 ===
+    % ==================================
+    
+    \paragraph{S.R. 09} - The AUAV shall have an operational availability of at least 98\%.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{This will ensure that the 3-Letter Agency can rely on this product to successfully and accurately identify and detect a human being within the appropriate system operations and mission.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{Trade studies completed to prove that the operational availability shall be 98\%} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Could be determining criteria in selecting between two equal components. & Choice of inferior product. & \cellcolor{green} Low & Trade-off studies need to be performed between components prior to procurement to ensure that standard tools are part of the criteria. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}  \\
+        \hline
+        Political and Operational Assessment & No tools available at time of need & AUAV grounded due to lack of maintenance tools & \cellcolor{yellow} Medium & The maintenance manuals will be reviewed for all specialty tools and vendor will be requested to supply as part of contract. & \cellcolor{green} Low 
+        \label{tab:sr09_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 10 ===
+    % ==================================
+    
+    \paragraph{S.R. 10} - The AUAV shall have an instantaneous reliability of at least 70\%.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{This is to ensure that all components are working properly and accurately. } \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{Reliability studies to ensure that the components selected maintain this reliability.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Could be determining criteria in selecting between two equal components. & Choice of inferior product. & \cellcolor{yellow} Medium & Use of only system-specific pieces. \newline Have all parts in spare storage to decrease repair time and increase reliability when changing out parts quickly. \newline Trade-off studies required. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
+        \hline
+        Organizational assessment & Tools might not be available when needed. & AUAV grounded due to lack of tools to fix components. & \cellcolor{yellow} Medium & Ensure that all tools and vendors will be available at time of service. & \cellcolor{green} Low \\
+        \hline
+        Political and Operational Assessment & No tools available at time of need & AUAV grounded due to lack of maintenance tools & \cellcolor{yellow} Medium & The maintenance manuals will be reviewed for all specialty tools and vendor will be requested to supply as part of contract. & \cellcolor{green} Low 
+        \label{tab:sr10_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 11 ===
+    % ==================================
+    
+    \paragraph{S.R. 11} - AUAV components and subsystems shall have a Mean Time Between Failure (MTBF) of at least one (1) year.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{This is to ensure that there will always be a working fleet and reducing lifetime cost.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{FMECA and failure studies will ensure that all AUAV subsystems will be able to support a minimum 1-year MTBF.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Could be determining criteria in selecting between two equal components. & Choice of inferior product. & \cellcolor{yellow} Medium & Trade-off studies need to be performed between components prior to procurement to ensure that standard tools are part of the criteria. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}  \\
+        \hline
+        Political and Operational Assessment & No tools available at time of need & AUAV could be grounded longer due to lack of proper components to lend a high operational availability time. & \cellcolor{yellow} Medium & Ensure all parts and components available before AUAV comes in for repair. & \cellcolor{green} Low 
+        \label{tab:sr09_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 13 ===
+    % ==================================
+    
+    \paragraph{S.R. 13} - The AUAV shall have a Mean Time To Repair (MTTR) of less than eight (8) hours for most subsystems and components.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{This is to ensure that there will always be a working fleet and reducing maintenance cost.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{The designs shall support a modular configuration to make repairs easy on the AUAV Maintenance Technicians.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Could be determining criteria in selecting between two equal components. & Choice of inferior product. & \cellcolor{yellow} Medium & Trade-off studies need to be performed between components prior to procurement to ensure that standard tools are part of the criteria.\newline Have one spare AUAV for each active AUAV for quick replacement/repair/downtime. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}  \\
+        \hline
+        Political and Operational Assessment & No tools available at time of need & AUAV could be grounded longer due to lack of proper components to lend a high operational availability time. & \cellcolor{yellow} Medium & Ensure all parts and components available before AUAV comes in for repair. & \cellcolor{green} Low 
+        \label{tab:sr13_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 14 ===
+    % ==================================
+    
+    \paragraph{S.R. 14} - The AUAV shall be capable of sending critical information to the MCC in less than five (5) seconds between message send and acknowledgement received.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{Any critical information should be sent in a timely manner.} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{All critical information sent in less than 5 seconds between message send and acknowledgement from the MCC received.} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment & Critical information must be sent in no more time than 5 seconds. & Performance objectives will not be met. & \cellcolor{green} Low & Communication systems and computer processors must be able to handle that fast of a response time. & \cellcolor{green} Low \\
+        \hline
+        Cost and Schedule \newline Assessment & More expensive technology might be required. & No cost saving \newline Risk of going over-budget & \cellcolor{green} Low & Select the components that give adequate capability at most competitive price; create price-to-performance ratios for various solutions through trade studies & \cellcolor{green} Low  \\
+        \hline
+        Organizational assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}  \\
+        \hline
+        Political and Operational Assessment & None identified & N/A & \cellcolor[gray]{0.8}  & N/A & \cellcolor[gray]{0.8}
+        \label{tab:sr14_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 15 ===
+    % ==================================
+    
+    \paragraph{S.R. 15} - The MCC shall be powered by a grid-independent 70 to 80-kWh generator that utilizes renewable energy to the greatest extent possible.
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        \hline
+        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        \hline
+        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        \hline
+        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        \label{tab:sr15_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+    
+    % ==================================
+    % === STAKEHOLDER REQUIREMENT 16 ===
+    % ==================================
+    
+    \paragraph{S.R. 16} - The MCC generator shall be cost effective for long-term maintenance
+    
+    {\fontsize{10pt}{11pt}\selectfont
+    \begin{longtable}{| L{0.12\linewidth} | L{0.16\linewidth} |  L{0.20\linewidth} | L{0.08\linewidth} | L{0.20\linewidth} | L{0.08\linewidth} |}
+        \hline \endlastfoot
+        
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
+        \hline
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \hline
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \hline
+        \rowcolor[gray]{0.8}
+        \multicolumn{6}{|c|}{ } \\
+        \hline
+        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \hline
+        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        \hline
+        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        \hline
+        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        \hline
+        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        \label{tab:sr16_feasibility}
+    \end{longtable}
+    }
+    
+    \newpage
+\end{landscape}
+
+\subsection{Quality Functional Deployment}
+    The Stakeholder Requirements were evaluated for the project feasibility and any associated risks. The team developed a Quality Functional Deployment (QFD) to capture the critical aspects of the Stakeholder Requirements and to give a visual representation to the technical responses for these driving requirements. Additionally, we conducted benchmarking studies to determine the feasibility and quantitatively compared our solution to comparative products to ensure we met or exceeded every given requirement and the standards of our competitors.
+
+    The team used a modified QFD. This provides a quantitative value to the requirements (functional and stakeholder). Each stakeholder requirement was given an importance value determined by how crucial it was to the projects needs and functions. The values are multiplied to give a functional requirement score which is then multiplied again by a degree of difficulty factor. The final score is the functional requirements importance and ranking.
+
+    After inputting all the data and populating the QFD (Figure 1), the team has a good understanding of the most crucial parts of project. The two most important functional requirements, according to this QFD, are the off-board processing capabilities and the Spatial Resolution. These requirements dictate the detail that can be processed by the AUAV’s optical sensors and the speed at which the information can be processed. The system’s reliability and the use of standard equipment also hold quite a bit of importance as well. A more detailed version of the QFD can be found in the Supporting Documentation, here for readability.
 
 \end{fullwidth}

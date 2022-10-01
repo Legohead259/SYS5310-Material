@@ -63,13 +63,13 @@
 	top=3cm, % Top margin
 	bottom=3cm, % Bottom margin
 	left=2cm, % Left margin
-	right=7.25cm, % Right margin
-	marginparwidth=4.25cm, % Width of the large right margin (sidebar) content
-	marginparsep=1cm, % Padding between the main text and the large right margin (sidebar)
+	right=2cm, % Right margin
+	marginparwidth=0cm, % Width of the large right margin (sidebar) content
+	marginparsep=0cm, % Padding between the main text and the large right margin (sidebar)
 	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
 	headsep=0.8cm, % Space from the top margin to the baseline of the header
 	headheight=1cm, % Height of the header
-	%showframe % Uncomment to show frames around the margins for debugging purposes
+% 	showframe % Uncomment to show frames around the margins for debugging purposes
 ]{geometry}
 
 \usepackage[oneside]{sidenotes} % Required for outputting content to the margin
