@@ -1,7 +1,7 @@
 \begin{fullwidth}
 \section{Stakeholders Needs and Requirements}
 \subsection{Stakeholder Needs}
-Five needs were identified through interactions with the key stakeholders, the client and the customer.
+Following needs were identified through interactions with the key stakeholders, the client and the customer.
 \begin{itemize}
     \item{The most advanced atmospheric turbulence compensating imaging system with integrated digital filtering technology and stereoscopic imaging system, which can produce the quickest real-time, highest spatial resolution images currently available.}
     \item{AUAV should be equipped with reinforcement-learning AI capable of threat-aversion, "search and find" maneuvers, Object of Interest tracking, Mission Planning, and Adaptive Mission Control.}
@@ -28,11 +28,13 @@ Five needs were identified through interactions with the key stakeholders, the c
         \item[S.R.12]{The AUAV shall have a Mean Time To Failure (MTTF) of 25 years.}
         \item[S.R.13]{The AUAV shall have a Mean Time To Repair (MTTR) of less than eight (8) hours for most subsystems and components.}
         \item[S.R.14]{The AUAV shall be capable of sending critical information to the MCC in less than five (5) seconds between message send and acknowledgement received.}
+        \item[S.R.15]{The AUAV system must pretend to be a harmless Search and Rescue AUAV.}
+        \item[S.R.16]{The system must be able to function in hostile and challenging conditions.}
     \end{enumerate}
     \subsubsection*{Mobile Command Center}
     \begin{enumerate}
-        \item[S.R.15]{The MCC shall be powered by a grid-independent 70 to 80-kWh generator that utilizes renewable energy to the greatest extent possible.}
-        \item[S.R.16]{The MCC generator shall be cost effective for long-term maintenance}
+        \item[S.R.17]{The MCC shall be powered by a grid-independent 70 to 80-kWh generator that utilizes renewable energy to the greatest extent possible.}
+        \item[S.R.18]{The MCC generator shall be cost effective for long-term maintenance}
     \end{enumerate}
 
 \subsection{Feasibility Analysis and Risk Identification}
@@ -356,22 +358,22 @@ Five needs were identified through interactions with the key stakeholders, the c
         \hline
         \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
         \hline
-        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \textbf{Rationale:} &  \multicolumn{5}{|L{0.8\linewidth}|} {In cases where an operator is not available, the AUAV should be able to perform missions without the need for one.}\\
         \hline
-        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \textbf{Fit Criterion:} &  \multicolumn{5}{|L{0.8\linewidth}|}{Simulation and field operations will be used to test the AI system. The AUAV features a single flight mode that can be autonomous, AI-based, or user-configurable.} \\
         \hline
         \rowcolor[gray]{0.8}
         \multicolumn{6}{|c|}{ } \\
         \hline
         \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
         \hline
-        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        Technical \newline Assessment & The AI system has a brief outage.\newline\vspace{3mm} On a solo mission, the AUAV meets an unplanned event that necessitates decision making and action. & Control or equipment failure.\newline\vspace{3mm} Failure to complete a mission because the objective was not met. & \cellcolor{yellow}{Medium} &Use cutting-edge software and hardware.\newline\vspace{1.5mm}Design with redundancy in mind.\newline\vspace{1.5mm} With 24/7 monitoring, operators are on readiness to take control if necessary.\newline\vspace{1.5mm}Allow for the creation of new solo mission configurations in real time. & \cellcolor{green}{Low} \\
         \hline
-        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        Cost and Schedule \newline Assessment & Perhaps a more expensive technology will be required.  & cost rise for the project  & \cellcolor{yellow}{Medium}  & Budget should be allocated to provide for unforeseen costs. & \cellcolor{green}{Low}  \\
         \hline
-        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        Organizational assessment & None identified  & None &\cellcolor[gray]{0.8} & None required  &\cellcolor[gray]{0.8}  \\
         \hline
-        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        Political and Operational Assessment & None identified & None &\cellcolor[gray]{0.8}  & None required &\cellcolor[gray]{0.8} 
         \label{tab:sr08_feasibility}
     \end{longtable}
     }
@@ -584,22 +586,22 @@ Five needs were identified through interactions with the key stakeholders, the c
         \hline
         \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
         \hline
-        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \textbf{Rationale:} &  \multicolumn{5}{|L{0.8\linewidth}|}{ When it comes to harsh situations and deserted areas, energy is crucial.} \\
         \hline
-        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \textbf{Fit Criterion:} &  \multicolumn{5}{|L{0.8\linewidth}|}{Utilizing solar energy as effectively as possible} \\
         \hline
         \rowcolor[gray]{0.8}
         \multicolumn{6}{|c|}{ } \\
         \hline
-        \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
+        \textbf{Risk} & \textbf{Risk Issue } & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
         \hline
-        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        Technical \newline Assessment & Solar panels need a large surface area, and a maximum power point tracking (MPPT) method is necessary. & MCC needs more area, which is problematic in a hostile environment where a foe can observe us.& \cellcolor{yellow}{Medium} & Regular silicon solar cells can be replaced by perovskite solar cells.  & \cellcolor{green}{low} \\
         \hline
-        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        Cost and Schedule \newline Assessment & We must raise our budget if we employ silicon solar cells. & expenditure rise & \cellcolor{green} {low}  & Replace silicon with perovskite cells & \cellcolor{green}{low}  \\
         \hline
-        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        Organizational assessment & major disadvantage of using this perovskite cell is it is not stable and they contain water-soluble lead.& If they are damaged, one may be required to replace them, which raises the costs. & \cellcolor{yellow}{Medium}  & An engineer should do routine inspections on solar panels. & \cellcolor{green}{Low}  \\
         \hline
-        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        Political and Operational Assessment & None Identified & None & \cellcolor[gray]{0.8}  & N/A &  \cellcolor[gray]{0.8}  
         \label{tab:sr15_feasibility}
     \end{longtable}
     }
@@ -622,22 +624,22 @@ Five needs were identified through interactions with the key stakeholders, the c
         \hline
         \textbf{Stakeholder:} & \multicolumn{5}{|l|}{Wilford Erasmus, POC of the three-letter agency} \\
         \hline
-        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{s} \\
+        \textbf{Rationale:} & \multicolumn{5}{|L{0.8\linewidth}|}{Long term maintenance of MCC power systems may be costly and should be minimized to reduce long-term project costs} \\
         \hline
-        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{} \\
+        \textbf{Fit Criterion:} & \multicolumn{5}{|L{0.8\linewidth}|}{MCC generator maintenance maintains a yearly budget less than 30\% of total annual operating budget} \\
         \hline
         \rowcolor[gray]{0.8}
         \multicolumn{6}{|c|}{ } \\
         \hline
         \textbf{Risk} & \textbf{Risk Issue} & \textbf{Risk Consequence} & \textbf{Initial Risk} & \textbf{Risk Mitigation} & \textbf{Risk \newline After Mitigation} \\
         \hline
-        Technical \newline Assessment &  &  & \cellcolor{} &  & \cellcolor{} \\
+        Technical \newline Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} \\
         \hline
-        Cost and Schedule \newline Assessment &  &  & \cellcolor{}  & & \cellcolor{}  \\
+        Cost and Schedule \newline Assessment & If non -renewable energy sources are used. & Non -renewable sources are easily depleted and so for powering the MCC generator, renewable energy sources required & \cellcolor{green} Low & Proper budgetary allocation should be made before starting the project. & \cellcolor{green} Low \\
         \hline
-        Organizational assessment &  &  & \cellcolor{}  &  & \cellcolor{}  \\
+        Organizational assessment & Organization budget can increase if unable to maintain long term cost-related activities. & Organization budget increases. & \cellcolor{yellow} Medium & Use of Solar energy will have low cost activities. & \cellcolor{green} Low \\
         \hline
-        Political and Operational Assessment &  &  & \cellcolor{}  &  & \cellcolor{} 
+        Political and Operational Assessment & None identified & N/A & \cellcolor[gray]{0.8} & N/A & \cellcolor[gray]{0.8} 
         \label{tab:sr16_feasibility}
     \end{longtable}
     }
