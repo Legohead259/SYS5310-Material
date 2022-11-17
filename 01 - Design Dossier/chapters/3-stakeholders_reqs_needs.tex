@@ -17,7 +17,7 @@ Following needs were identified through interactions with the key stakeholders, 
         \item[S.R.01]{The AUAV system shall interface with the existing AUAV mission control center to provide the best possible imaging technology and data processing for detection, identification, and tracking capabilities.}
         \item[S.R.02]{The AUAV must be able to operate continuously across the world.}
         \item[S.R.03]{The AUAV shall conduct its operations in a safe manner.}
-        \item[S.R.04]{The AUAV shall meet or exceed mission detection, identification, and tracking requirements as specified in Table 3 Permutation of Stakeholder Requirements.}
+        \item[S.R.04]{The AUAV shall meet or exceed mission detection, identification, and tracking requirements as specified in Table \ref{tab:permutation_of_stakeholder_reqs} Permutation of Stakeholder Requirements.}
         \item[S.R.05]{The AUAV shall be a modular, open-architecture platform for inclusion of future technologies.}
         \item[S.R.06]{The AUAV shall utilize COTS products wherever possible.}
         \item[S.R.07]{The AUAV shall be supported and maintained for the program life cycle of 25-years after delivery with planned improvements}
@@ -31,6 +31,27 @@ Following needs were identified through interactions with the key stakeholders, 
         \item[S.R.15]{The AUAV system must pretend to be a harmless Search and Rescue AUAV.}
         \item[S.R.16]{The system must be able to function in hostile and challenging conditions.}
     \end{enumerate}
+    
+    \begin{table}[]
+        \centering
+        \begin{tabular}{| L{0.5\linewidth} | L{0.5\linewidth} |}
+            \hline
+            \textbf{Requirement} & \textbf{Permutation for Target of Interest (TOI)} \\
+            \hline
+            S.R. 04 - The AUAV shall meet or exceed mission detection, identification, and tracking requirements & 
+            \begin{enumerate}
+                \item Detect human TOI within a slant range of 9.543 km during daytime.
+                \item Detect human TOI within a slant range of 1.5 km during nighttime.
+                \item Identify human TOI within a slant range of 1.5 km during daytime.
+                \item Identify human TOI within a slant range of 250 m during nighttime (with slipstream sensors).
+                \item Identify human TOI within a slant range of 1.5 km (with slipstream sensors).
+             \end{enumerate} \\
+            \hline
+        \end{tabular}
+        \caption{Permutation of Stakeholder Requirements }
+        \label{tab:permutation_of_stakeholder_reqs}
+    \end{table}
+    
     \subsubsection*{Mobile Command Center}
     \begin{enumerate}
         \item[S.R.17]{The MCC shall be powered by a grid-independent 70 to 80-kWh generator that utilizes renewable energy to the greatest extent possible.}
